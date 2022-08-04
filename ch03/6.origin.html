@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>background-origin</title>
+    <style>
+        div {
+            background-image: url('../res/leaf.jpg');
+            background-repeat: no-repeat;
+            border: 1rem solid;
+            width: 10rem;
+            height: 10rem;
+            padding: 1rem;
+            margin: .5rem;
+        }
+
+        #one {
+            background-origin: border-box;
+        }
+
+        #two {
+            background-origin: padding-box; /* background-image의 기본값*/
+        }
+
+        #three {
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div id='one'>border-box</div>
+    <div id='two'>padding-box</div>
+    <div id='three'>content-box</div>
+</body>
+</html>

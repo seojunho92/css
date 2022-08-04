@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>background-clip</title>
+    <style>
+        /* 과제 : 너비 7m, 높이 7M, 배경 노랑 사각형 4개를 만들어라. */
+        div { 
+            width: 7rem;
+            height: 7rem;
+            background-color: yellow;
+            margin: 1rem;
+            border: .5rem dotted;
+            padding: .3rem;
+        }
+
+        #one {
+            background-clip: border-box; /* background-color 의 기본값*/
+        }
+
+        #two {
+            background-clip: padding-box;
+        }
+
+        #three {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id='one'></div>
+    <div id='two'></div>
+    <div id='three'></div>
+    <div></div>
+</body>
+</html>

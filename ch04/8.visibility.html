@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>visibility</title>
+    <style>
+        div {
+            padding: 3rem;
+            margin: 1rem;
+            float: left;
+        }
+
+        .one {
+            background: red;
+        }
+
+        .two {
+            background: orange;
+            visibility: hidden; /* 투명인간 : 안보이지만 자신만의 공간을 차지하고있다. */
+        }
+
+        .three {
+            background: green;
+        }
+        
+        .one2 {
+            background: red;
+        }
+
+        .two2 {
+            background: orange;
+            display: none; /* 영혼 : 존재하지만 공간을 차지하고있지않다. ex>유저의 등급에 따라 보이는 버튼의 갯수를 다르게한다. */
+        }
+
+        .three2 {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class='one'></div>
+    <div class='two'></div>
+    <div class='three'></div>
+
+    <div class='one2'></div>
+    <div class='two2'></div>
+    <div class='three2'></div>
+</body>
+</html>

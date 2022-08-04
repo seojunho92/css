@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>background-repeat</title>
+    <style>
+        div {
+            width: 9rem;
+            height: 9rem;
+            border: 0.1rem solid;
+            margin: 1rem;
+            background-image: url('../res/leaf.jpg'); /* 과제 : leaf.jpg 를 포함시켜라*/
+        }
+
+        #one {
+            background-repeat: repeat-x;
+        }
+
+        #two {
+            background-repeat: repeat-y;
+        }
+
+        #three {
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div id='one'></div>
+    <div id='two'></div>
+    <div id='three'></div>
+</body>
+</html>
