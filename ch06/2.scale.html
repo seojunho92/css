@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>scale</title>
+    <style>
+        .container {
+            background: yellow;
+            width: 10rem;
+            height: 10rem;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .box {
+            background: black;
+            padding: 2rem;
+            /* 과제 : .box 객체를 원으로 만들어라.*/
+            position: absolute;
+            border-radius: 50%;
+            /* 과제 : 위 원을 container 중앙쯤에 배치하라.*/
+            /*
+            left: 5rem;
+            top: 5rem;
+            */
+            left: 35%;
+            top: 35%;
+        }
+
+        .box:active {
+            transform: scale(2, 2);
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='box'></div>
+    </div>
+</body>
+</html>
